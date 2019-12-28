@@ -11,7 +11,7 @@
 			<th>Serving Size</th>
 			<th>Cook Time</th>
 			<th>Instructions</th>
-			<th>Source</th>
+			<th> </th>
 		</tr>
 	</table>
 </div>
@@ -52,11 +52,6 @@
 		let instructions = document.createElement('td');
 		instructions.textContent = recipes[i].instructions;
 		recipe_row.appendChild(instructions);
-
-		// add source of recipe to table
-		let source = document.createElement('td');
-		source.textContent = recipes[i].source_id;
-		recipe_row.appendChild(source);
 
 		// this button sends a request to delete the element and it then hides the html
 		let button = document.createElement('button');
