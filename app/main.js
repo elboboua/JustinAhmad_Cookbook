@@ -24,12 +24,21 @@ app.set('mysql', mysql);
 
 // home page - search
 app.get('/',function (req,res,next){
-  res.render('search');
+  res.render('recipe_main');
 });
 
 // displays recipes
 app.get('/recipes', function (req, res, next){
   res.render('recipe_main');
+});
+
+app.get('/add-recipe', function (req, res, next){
+  res.render('add_recipe');
+});
+
+
+app.get('/search', function (req, res, next){
+  res.render('search');
 });
 
 // displays sources

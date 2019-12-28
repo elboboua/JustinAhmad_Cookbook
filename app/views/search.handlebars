@@ -51,6 +51,7 @@ function buildTable(recipes){
 		// add source of recipe to table
 		let cook_time = document.createElement('td');
 		cook_time.textContent = recipes[i].cook_time;
+		cook_time.textContent += " minutes"
 		recipe_row.appendChild(cook_time);
 
 		// add source of recipe to table
